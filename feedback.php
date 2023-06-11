@@ -40,8 +40,9 @@
                   placeholder="Иванов Иван Иванович"
                   name="name"
                   id="name"
-                  data-reg="^[А-ЯЁ][а-яё]*([-][А-ЯЁ][а-яё]*)?\s[А-ЯЁ][а-яё]*\s[А-ЯЁ][а-яё]*$"
+                  data-reg
                   required
+                  pattern="^[А-ЯЁ][а-яё]*([-][А-ЯЁ][а-яё]*)?\s[А-ЯЁ][а-яё]*\s[А-ЯЁ][а-яё]*$"
                   />
             </div>
             <div class="input-box">
@@ -51,24 +52,27 @@
                   placeholder="г. Москва"
                   name="adress"
                   id="adress"
-                  data-reg="^[г.]*\s[А-ЯЁ][а-яё]*([-][А-ЯЁ][а-яё]*)*$"
+                  required
+                  pattern="^[г.]*\s[А-ЯЁ][а-яё]*([-][А-ЯЁ][а-яё]*)*$"
+                  data-reg
                 />
             </div>
             <div class="input-box">
               <label for="phone">Контактный номер*</label>
                 <input
-                  type="text"
+                  type="phone"
                   placeholder="+71234567890"
                   name="phone"
                   id="phone"
-                  data-reg="^((\+7|7|8)+([0-9]){10})$"
+                  data-reg
                   required
+                  pattern="^((\+7|7|8)+([0-9]){10})$"
                 />
             </div>
             <div class="input-box">
               <label for="email">Ваш E-mail*</label>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="name@mail.com"
                   name="email"
                   id="email"
